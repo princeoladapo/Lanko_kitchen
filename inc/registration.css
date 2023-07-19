@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+}
+
+h1, h3, h4, h5, h6, a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+}
+
+p{
+    color: white;
+}
+
+/* Header Style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color:  black;
+}
+
+header > a {
+    text-decoration: none;
+    color: yellow;
+    display: flex;
+}
+
+header > a > div > h2.pot {
+    margin-top: -20%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header > a > div > h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header > nav > ul> li {
+    list-style: none;
+}
+
+header > nav > ul> li > a {
+    color: yellow;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+div > h1{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+form > input.btn{
+    margin: 1%;
+    width: 15%;
+    height: 5vh;
+    background-color: black;
+    color: yellow;
+    border-style: none;
+    
+}
+
+form > input.put {
+    width: 25%;
+    height: 5vh;
+    margin-left: 3%;
+    border-style: none;
+    background-color: black;
+    color: white;
+}
+
+form > h4 {
+    margin-bottom: -0%;
+    margin-top: 3%;
+}
