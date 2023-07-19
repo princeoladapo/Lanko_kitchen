@@ -23,7 +23,13 @@
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="register.php">REGISTRATION</a></li>
                 <li><a href="login.php">LOGIN</a></li>
-                <li><a href="logout.php">LOGOUT</a></li>
+                <?php if (isset($_SESSION["user_type"]) && $_SESSION ["user_type"] == "admin") {?>
+                    <li><a href="register2.php">REGISTER USERS</a></li>
+                    <li><a href="logout.php">LOGOUT</a></li>
+                <?php } else if  (isset($_SESSION["user_type"]) && $_SESSION ["user_type"] == "user") { ?>
+                    <li><a href="order.php">ORDER FOOD</a></li>
+                    <li><a href="logout.php">LOGOUT</a></li>
+                <?php } ?>    
             </ul>
         </nav>
     </header>

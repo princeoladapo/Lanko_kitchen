@@ -11,45 +11,6 @@ p{
     color: white;
 }
 
-/* Header Style */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    background-color: black;
-}
-
-header > a {
-    text-decoration: none;
-    color: yellow;
-    display: flex;
-}
-
-header > a > div > h2.pot {
-    margin-top: -20%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-header > a > div > h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-header > nav > ul {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-header > nav > ul> li {
-    list-style: none;
-}
-
-header > nav > ul> li > a {
-    color: yellow;
-    text-decoration: none;
-}
-
 body{
     background-image: url(back.jpg);
     background-repeat: no-repeat;

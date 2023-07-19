@@ -1,23 +1,7 @@
 <link rel="stylesheet" href="inc/login.css">
 
-<header>
-        <a href="index.php">
-            <div>
-                <h2>LANKO</h2>
-                <h2 class="pot">HOT-POT</h2>
-            </div>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="register.php">REGISTRATION</a></li>
-                <li><a href="login.php">LOGIN</a></li>
-                <li><a href="logout.php">LOGOUT</a></li> 
-            </ul>
-        </nav>
-</header>
-
-<?php 
+<?php
+    require_once 'inc/header.php';
     if(isset($_SESSION['user_type'])) {
         header('Location: index.php');
         exit();
@@ -26,7 +10,6 @@
     require_once 'inc/db_connect.php';
 
 
-    // Check if the login form was submitted successfully
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email = $_POST['email'];
         $pass = $_POST['password'];
@@ -36,14 +19,17 @@
 
         if(mysqli_num_rows($res) == 1) {
             $users = mysqli_fetch_assoc($res);
-            
-            if (password_verify($pass, $users['password'])) {
-                $_SESSION['user_type'] = $users['user_type'];
+
+            if($pass == $users['password']) {
                 $_SESSION['user_id'] = $users['user_id'];
-                header('Location: index.php');
+                $_SESSION['phone_number'] = $users['phone_number'];
+                $_SESSION['name'] = $users['name'];
+                $_SESSION['user_type'] = $users['user_type'];
+
+                header('location: index.php');
                 exit;
             } else {
-                echo '<h1>Invalid Password</h1>';
+                echo '<h1>Invalid Password<h1/>';
             }
         } else {
         echo '<h1>Invalid Email</h1>';

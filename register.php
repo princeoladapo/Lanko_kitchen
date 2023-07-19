@@ -1,26 +1,8 @@
 <?php 
-    // require_once "inc/header.html";
+    require_once "inc/header.php";
     require_once "inc/db_connect.php";
 ?>
-
 <link rel="stylesheet" href="inc/registration.css">
-
-<header>
-        <a href="index.php">
-            <div>
-                <h2>LANKO</h2>
-                <h2 class="pot">HOT-POT</h2>
-            </div>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="register.php">REGISTRATION</a></li>
-                <li><a href="login.php">LOGIN</a></li>
-                <li><a href="logout.php">LOGOUT</a></li>
-            </ul>
-        </nav>
-</header>
 
 <div class="head">
     <h1>REGISTER AN ACCOUNT</h1>
@@ -63,7 +45,7 @@
         }
         
 
-        $query = "INSERT INTO `users`(name, phone_number, email, password) VALUES ('$name', '$phone', '$email', '$hashpass')";
+        $query = "INSERT INTO `users`(name, phone_number, email, password) VALUES ('$name', '$phone', '$email', '$password')";
 
         if (mysqli_query($conn, $query)) {
             echo "<h1>User Registered successfully</h1>";
