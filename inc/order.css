@@ -1,0 +1,129 @@
+/* CSS Reset */
+body, html {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a, button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    /* color: yellow; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header > a {
+    text-decoration: none;
+    color: yellow;
+    display: flex;
+}
+
+header > a > div > h3 {
+    margin-top: -20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header > a > div > h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header > a > img {
+    height: 70px;
+    margin-top: 6% ;
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header > nav > ul> li {
+    list-style: none;
+}
+
+header > nav > ul> li > a {
+    color: yellow;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(./back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+div > img{
+    margin-top: 5%;
+    height: 15vh;
+}
+
+div > h1 {
+    color: white;
+    font-size: 45px;
+    margin-top: 6%;
+}
+
+div > div.con {
+    display: flex;
+}
+
+div > div.con > div.box > form{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    color: white;
+    margin-top: 4%;
+}
+
+div > div.con > div.box > form > div.sub > input {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 18rem;
+    border-style: none;
+    margin-left: 5%;
+}
+
+div > div.con > div.box > form > div.sub > h4{
+    color: yellow;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5%;
+
+}
+
+div > div.con1 {
+    color: white;
+    width: 30%;
+    background-color: black;
+    margin-left: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+div > div.con1 > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+div > div.con1 > hr {
+    margin-top: -3%;
+}
+
+div > div.con > div.box > form > button{
+    background-color: yellow;
+    width: 40%;
+    height: 6vh;
+    margin-left: -120%;
+    margin-top: 100%;
+    border-style: none;
+}

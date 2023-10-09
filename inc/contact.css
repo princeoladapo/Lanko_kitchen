@@ -1,0 +1,83 @@
+/* CSS Reset */
+body, html {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a, button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-image: url(back.jpg);
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+div > h1 {
+    color: white;
+    font-size: 45px;
+    margin-top: 6%;
+}
+
+div.carry > div.con {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+div.carry > div.con > div.box1{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+div.carry > div.con > div.box1 > img {
+    height: 40px;
+}
+
+div.carry > div.con > div.box2{
+    display: flex;
+    align-items: center;
+}
+div.carry > div.con > div.box2 > img {
+    height: 40px;
+}
+
+div.carry > div.con > div.box3{
+    display: flex;
+    align-items: center;
+}
+div.carry > div.con > div.box3 > img {
+    height: 40px;
+}
+
+div.carry > div.con > div > a > img{
+    height: 40px;
+}
+
+div.carry > div.con > div.log {
+    margin-top: 5%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+div.carry > div.con1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 65%;
+}
+
+div.carry > div.con1 > p {
+    color: white;
+}
+
+div.carry > div.con1 > h3 {
+    color: yellow;
+}

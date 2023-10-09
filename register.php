@@ -1,5 +1,4 @@
 <?php 
-    require_once "inc/header.php";
     require_once "inc/db_connect.php";
 ?>
 <link rel="stylesheet" href="inc/registration.css">

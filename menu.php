@@ -2,15 +2,8 @@
     session_start()
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanko Hot-Pot</title>
-    <link rel="stylesheet" href="inc/styler.css">
-</head>
-<body>
+<link rel="stylesheet" href="inc/menu.css">
+
     <header>
         <a href="index.php">
             <div>
@@ -34,8 +27,4 @@
         </nav>
     </header>
 
-    <div class="ban">
-        <h1>LANKO HOT-POT</h1>
-        <h2>No.1 Amala plug in Lagos</h2>
-    </div>
-    
+<h1>MENU PAGE</h1>
